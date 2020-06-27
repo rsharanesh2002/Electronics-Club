@@ -67,7 +67,7 @@ Following the strip led we place the outer metal strip, and then with a small ga
 
 A bit Clumsy image, but I hope the idea is pretty clear.
 
-![Project Image](path)
+![Project Image](/data/)
 
 
 
