@@ -58,25 +58,25 @@ Following this we use the contour map generation technique to find out the dista
 Along with this we also use other technique of diagonal filling in order to find out, if there is any single diagonal route instead of a criss-cross loop, by doing this we could be able to reduce the time taken.
 
 
-![Partitions and the rule in them](images/partition-algorithm.jpg)
+![Partitions and the rule in them](data/partition-algorithm.jpg)
 
-![The Complete Algorithm](images/complete_algorithm.jpg)
+![The Complete Algorithm](data/complete_algorithm.jpg)
 
 ### Stepper motor: (Driver [Datasheet](https://robu.in/wp-content/uploads/2015/12/pololu_a4988-1.pdf)) 
 
 Stepper motor, as the name suggest we have the control on the step sizes of motor. Basically, those step sizes are measured in angles. By knowing the diameter of the wheel we use, we can always keep a track of how much distance the robot has moved. Also, after the computation ad optimization the output can be easily fed into them using the microcontroller. 
 
-![Stepper Driver](images/servo_circuit.jpg)
-![Stepper Driver](images/servo_schema.jpg)
+![Stepper Driver](data/servo_circuit.jpg)
+![Stepper Driver](data/servo_schema.jpg)
 
 ### Ultrasonic Sensor:
 Here we use the HC-SR04 ultrasonic sensor in order to measure the distance of the wall, it has few advantages such as, it can be used in any lighting conditions since it uses sound waves also it consumes low power. Even though the accuracy is low, for short range applications it can be used. Also, it’s highly cost efficient and the connection also pretty much easier.
 
-![HC-SR04 Circuit](images/ultrasonic_circuit.jpg)
+![HC-SR04 Circuit](data/ultrasonic_circuit.jpg)
 
 ### Arduino Nano: 
 The microcontroller that we use here is Arduino Nano, which is one of the most popular microcontroller that is widely used. In our application we use 3 ultrasonic sensors and two stepper motor drivers. Each ultrasonic sensor requires 2 digital pins and each stepper motor driver needs 4 digital pin. So a total of 14 digital pins are needed. Fortunately the number of digital pins in arduino nano is also 14, no worries also the analog pins of Arduino can be used for digital purposes too and so there is no need for the use of Uno or mega. The other advantage of using Nano is that it’s size is small and so, the whole size of the bot can be reduced. One of the important step in the micro-mouse challenge is to reduce the size of the robot.
-![Nano Pinout](images/nano_pins.jpg)
+![Nano Pinout](data/nano_pins.jpg)
 
 ### Power source:
 The components that are used here don’t require much power and they can directly run by using a Power bank that is used for mobile charging. Basically we take two output from the power bank and give one of it to the motor driver and other to the microcontroller, so as to increase the speed of the robot. 
@@ -88,7 +88,7 @@ In the initial run,where we map, so for that the speed of the motor will be low.
 ### Design:
 The design for it can be made on a general PCB with two motors and a castor wheel in the front. The two stepper motors are placed at the back and then arduino is placed on the chases and then the two micro controllers placed near the board itself. The Three Ultrasonic sensors are placed one at the front and two are located near the sides. The weight of each motor is around 200gm and the total weight of the bot will be around 500gm. 
 
-![Layout](images/bot_layout.jpg)
+![Layout](data/bot_layout.jpg)
 
 
 ## Cost Analysis:
